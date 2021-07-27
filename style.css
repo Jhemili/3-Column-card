@@ -1,0 +1,88 @@
+:root {
+    --clr-neutral-white: hsla(0,0%,100%,0.75);
+    --clr-neutral-gray: hsl(0,0%,95%);
+    --clr-orange: hsl(31,77%,52%);
+    --clr-cyan: hsl(184,100%,22%);
+    --clr-dark-cyan: hsl(179,100%,13%);
+
+    --ff-primary:'Lexend Deca', sans-serif;
+    --ff-primary-700: 'Big Shoulders Display', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-neutral-gray);
+    padding: 2rem;  
+}
+
+h2 {
+    font-family: var(--ff-primary-700);
+    font-size: 2rem;
+    color: var(--clr-neutral-gray);
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+}
+
+img {
+    max-width: 30%;
+}
+
+button {
+    all: unset;
+    display: inline-block;
+    padding: .5em 1.25em;
+    border: solid 2px var(--clr-neutral-gray);
+    border-radius: 1rem;
+    width: 5rem;
+}
+
+button:hover {
+    background: var(--clr-neutral-gray);
+    cursor: pointer;
+}
+
+.card {
+    padding: 2rem 2.5rem 2rem 2.5rem ;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card p {
+    font-family: var(--ff-primary);
+    font-size: .938rem;
+    color: var(--clr-neutral-white);
+    line-height: 1.5rem;
+    height: 50%;
+}
+
+.card1 {
+    background-color: var(--clr-orange);
+    border-radius: .8rem  .8rem 0 0;
+}
+.card2 {
+    background-color: var(--clr-cyan);
+}
+.card3 {
+    background-color: var(--clr-dark-cyan);
+    border-radius: 0 0 .8rem .8rem;
+}
+
+footer {
+    margin-top: 2rem;
+    bottom: 2rem;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
