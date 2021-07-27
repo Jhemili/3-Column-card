@@ -40,15 +40,30 @@ img {
 button {
     all: unset;
     display: inline-block;
-    padding: .5em 1.25em;
+    padding: .8em 1em;
     border: solid 2px var(--clr-neutral-gray);
-    border-radius: 1rem;
-    width: 5rem;
+    border-radius: 2rem;
+    width: 6rem;
+    color: var(--clr-neutral-gray);
+    font-family: var(--ff-primary);
+    font-size: .938rem;
+    font-weight: 400;
+    text-align: center;
 }
 
 button:hover {
     background: var(--clr-neutral-gray);
     cursor: pointer;
+}
+
+.button1:hover {
+    color: var(--clr-orange);
+}
+.button2:hover {
+    color: var(--clr-cyan);
+}
+.button3:hover {
+    color: var(--clr-dark-cyan);
 }
 
 .card {
@@ -60,6 +75,7 @@ button:hover {
 .card p {
     font-family: var(--ff-primary);
     font-size: .938rem;
+    font-weight: 400;
     color: var(--clr-neutral-white);
     line-height: 1.5rem;
     height: 50%;
